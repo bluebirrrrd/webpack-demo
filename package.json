@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --mode development\"",
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "build": "webpack --env production"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,8 @@
     "nodemon": "^1.17.5",
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4",
-    "webpack-dev-server": "^3.1.4"
-  }
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {}
 }
